@@ -17,7 +17,7 @@
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.carousel {
 		height: 520rpx;
 	}

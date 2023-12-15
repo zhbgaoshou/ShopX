@@ -36,14 +36,13 @@
 						title: '签到有礼',
 						image: 'http://file.shopro.top/uploads/20210518/884360099a48d435e23e24091fb7084f.png'
 					},
-
 				]
 			}
 		}
 	}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.menu-tab {
 		// height: 100rpx;
 		margin-top: 20rpx;
@@ -52,6 +51,7 @@
 		grid-template-rows: repeat(2, 1fr);
 		gap: 5rpx;
 		background-color: #fff;
+		padding: 10rpx 0;
 
 		&-item {
 			display: flex;

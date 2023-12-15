@@ -4,11 +4,13 @@ import App from './App'
 import Vue from 'vue'
 import './uni.promisify.adaptor'
 import uView from '@/uni_modules/uview-ui'
+import API from './api/index.js'
 
 Vue.use(uView)
 
 Vue.config.productionTip = false
 App.mpType = 'app'
+Vue.prototype.$api = API
 
 const app = new Vue({
   ...App
