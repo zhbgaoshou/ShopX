@@ -76,7 +76,7 @@
 				.more {
 
 					&-first {
-						margin: 10rpx 0;
+						// margin: 10rpx 0;
 						font-size: 20px;
 						color: #ff3000;
 						font-weight: 600;
