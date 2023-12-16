@@ -10,8 +10,8 @@
 
 					<p class="more-last" v-if="goodsInfo.isDiscount">￥{{goodsInfo.discountPrice}}</p>
 				</view>
-				<view class="goods-card-car">
-					gex
+				<view>
+					<image class="goods-card-car" src="../static/index/images/购物车.png" ></image>
 				</view>
 			</view>
 		</view>
@@ -30,6 +30,14 @@
 </script>
 
 <style lang="scss" scoped>
+	.goods-card-car {
+		width: 50rpx;
+		height: 50rpx;
+		border: 1px solid #ff5500;
+		padding: 10rpx;
+		border-radius: 50%;
+	}
+
 	.goods-card {
 		width: 100%;
 		height: 100%;
