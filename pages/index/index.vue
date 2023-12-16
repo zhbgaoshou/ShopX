@@ -1,5 +1,7 @@
 <template>
 	<view class="content">
+		<!-- 搜索 -->
+		<shopSearch></shopSearch>
 		<!-- 轮播图 -->
 		<shopCarousel></shopCarousel>
 		<!-- 金刚区 -->
@@ -14,6 +16,7 @@
 </template>
 
 <script>
+	import shopSearch from './components/shop-search.vue'
 	import shopCarousel from './components/shop-carousel.vue'
 	import menuTab from './components/menu-tab.vue'
 	import shopType from './components/shop-type.vue'
@@ -28,7 +31,8 @@
 			shopCarousel,
 			menuTab,
 			shopType,
-			shopRecommend
+			shopRecommend,
+			shopSearch
 		},
 		onLoad() {
 			console.log(this.$api);

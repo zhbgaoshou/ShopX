@@ -5,27 +5,47 @@
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "首页",
-				"navigationStyle": "custom",
+				"navigationStyle": "default",
 				"backgroundColor": "#f1f1f1"
 			}
 		},
 		{
 			"path": "pages/category/category",
 			"style": {
-				"navigationBarTitleText": "",
+				"navigationBarTitleText": "分类",
 				"enablePullDownRefresh": false
 			}
 		}, {
 			"path": "pages/cart/cart",
 			"style": {
-				"navigationBarTitleText": "",
+				"navigationBarTitleText": "购物车",
 				"enablePullDownRefresh": false
 			}
 		}, {
 			"path": "pages/user/user",
 			"style": {
-				"navigationBarTitleText": "",
+				"navigationBarTitleText": "个人中心",
 				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/searchDetail/searchDetail",
+			"style": {
+				"navigationBarTitleText": "搜索详情",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "default",
+				"navigationBarBackgroundColor": "#fff",
+				"usingComponents": {
+				  "van-dropdown-menu": "/wxcomponents/vant/dist/dropdown-menu/index",
+				  "van-dropdown-item": "/wxcomponents/vant/dist/dropdown-item/index"
+				}
 			}
 		}
 	],
