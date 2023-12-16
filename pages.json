@@ -12,8 +12,12 @@
 		{
 			"path": "pages/category/category",
 			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
+				"navigationBarTitleText": "商品分类",
+				"app-plus": {
+					"titleNView": {
+						"titleAlign": "center"
+					}
+				}
 			}
 		}, {
 			"path": "pages/cart/cart",
