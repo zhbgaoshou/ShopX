@@ -9,7 +9,14 @@
 			<text class="search-text-last" @click="clearHistory">清空历史记录</text>
 		</view>
 		<view class="search-history" @click="searchHandler">
+
 			<view v-for="history in historyList" class="search-history-tag" :data-history='history'>{{history}}</view>
+
+			<view style="display: flex;justify-content: center;width: 100%;">
+				<u-empty :show="historyList.length <= 0" mode="history"
+					icon="http://cdn.uviewui.com/uview/empty/history.png">
+				</u-empty>
+			</view>
 		</view>
 	</view>
 </template>
@@ -24,6 +31,7 @@
 		},
 		watch: {
 			historyList(newValue) {
+				console.log(this.historyList.length);
 				uni.setStorageSync('historyList', newValue)
 			}
 		},
@@ -36,12 +44,12 @@
 			searchHandler(evt) {
 				try {
 					const history = evt.target.dataset.history
-					
+
 					this.keyword = history
 				} catch (e) {
-					
+
 				} finally {
-					if (this.keyword === '') return
+					if (!this.keyword) return
 					this.goSearchDetail()
 
 

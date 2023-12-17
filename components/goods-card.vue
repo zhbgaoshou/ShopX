@@ -1,5 +1,5 @@
 <template>
-	<view class="goods-card" :style="{width,height}">
+	<view class="goods-card" :style="{width,height}" @click="$emit('goDetail', goodsInfo)">
 		<image class="goods-card-img" :src="goodsInfo.image" mode=""></image>
 		<view class="goods-card-info">
 			<h4 class="goods-card-info-title">{{goodsInfo.title}}</h4>
@@ -30,6 +30,7 @@
 </script>
 
 <style lang="scss" scoped>
+	// 购物车
 	.goods-card-car {
 		width: 50rpx;
 		height: 50rpx;
@@ -37,6 +38,7 @@
 		padding: 10rpx;
 		border-radius: 50%;
 	}
+	// end
 
 	.goods-card {
 		width: 100%;
@@ -56,14 +58,14 @@
 
 			&-title {
 				@include ell-mline(2);
-				font-weight: 700;
-				margin-bottom: 13rpx;
+				font-weight: 600;
+				margin-bottom: 12rpx;
 			}
 
 			&-desc {
 				@include ell-line();
 				color: #999;
-				font-size: 28rpx;
+				font-size: 24rpx;
 			}
 
 			&-price {
@@ -76,14 +78,13 @@
 				.more {
 
 					&-first {
-						// margin: 10rpx 0;
-						font-size: 20px;
+						font-size: 32rpx;
 						color: #ff3000;
-						font-weight: 600;
+						font-weight: 500;
 					}
 
 					&-last {
-						font-size: 18px;
+						font-size: 28rpx;
 						font-weight: 400;
 						text-decoration: line-through;
 						color: #c4c4c4;

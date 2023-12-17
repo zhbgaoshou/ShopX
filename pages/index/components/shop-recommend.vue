@@ -8,7 +8,7 @@
 		</view>
 		<!-- 推荐商品卡片 -->
 		<view class="recommend-goods">
-			<goods-card :goodsInfo='goods' v-for="goods in goodsInfoList"></goods-card>
+			<goods-card @goDetail="goDetailHandler" :goodsInfo='goods' v-for="goods in goodsInfoList"></goods-card>
 		</view>
 	</view>
 </template>
@@ -40,6 +40,13 @@
 		},
 		components: {
 			goodsCard
+		},
+		methods:{
+			goDetailHandler(goodsInfo){
+				uni.navigateTo({
+					url:`/pages/goodsDetail/goodsDetail?goodsInfo=${JSON.stringify(goodsInfo)}`
+				})
+			}
 		}
 	}
 </script>

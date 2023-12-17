@@ -22,9 +22,8 @@
 		</view>
 		
 		<view class="detail-main">
-			<goods-card :goodsInfo='goods' v-for="goods in goodsInfoList"></goods-card>
+			<goods-card @goDetail="goDetail" :goodsInfo='goods' v-for="goods in goodsInfoList"></goods-card>
 		</view>
-
 
 	</view>
 </template>
@@ -102,6 +101,11 @@
 			goIndex(){
 				uni.switchTab({
 					url:'/pages/index/index'
+				})
+			},
+			goDetail(goodsInfo){
+				uni.navigateTo({
+					url:`/pages/goodsDetail/goodsDetail?goodsInfo=${JSON.stringify(goodsInfo)}`
 				})
 			}
 		},

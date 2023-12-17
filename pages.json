@@ -5,8 +5,8 @@
 			"path": "pages/index/index",
 			"style": {
 				"navigationBarTitleText": "首页",
-				"navigationStyle": "default",
-				"backgroundColor": "#f1f1f1"
+				"navigationStyle": "default"
+				// "backgroundColor": "#f1f1f1"
 			}
 		},
 		{
@@ -42,7 +42,7 @@
 		{
 			"path": "pages/searchDetail/searchDetail",
 			"style": {
-				"navigationBarTitleText": "搜索详情",
+				"navigationBarTitleText": "商品列表",
 				"enablePullDownRefresh": false,
 				"navigationStyle": "default",
 				"navigationBarBackgroundColor": "#fff",
@@ -51,13 +51,20 @@
 				  "van-dropdown-item": "/wxcomponents/vant/dist/dropdown-item/index"
 				}
 			}
+		},
+		{
+			"path" : "pages/goodsDetail/goodsDetail",
+			"style" : 
+			{
+				"navigationBarTitleText" : "商品详情",
+				"enablePullDownRefresh" : false
+			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#FFF",
+		"backgroundColor": "#FFF"
 	},
 	"tabBar": {
 		"color": "#333",

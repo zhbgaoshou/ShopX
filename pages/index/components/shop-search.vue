@@ -25,7 +25,6 @@
 <style lang="scss" scoped>
 	.search {
 		box-sizing: border-box;
-		border-radius: 0 0 10px 10px;
 		width: 100%;
 		position: fixed;
 		margin-top: -1px;
